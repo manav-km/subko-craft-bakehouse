@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subko Coffee Roasters & Craft Bakehouse — Mary Lodge, Ranwar, Bandra West</title>
+  <meta name="description" content="Subko Coffee Roasters & Craft Bakehouse at Mary Lodge, Ranwar Village, Bandra West. Specialty Indian pour-overs, sourdough croissants, single-origin cacao, table reservations and craft bakehouse ordering.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Subko Coffee Roasters & Craft Bakehouse — Bandra West">
+  <meta property="og:description" content="Specialty Indian single-origin coffee, 72-hour laminated sourdough croissants, and craft cacao at Mary Lodge, Bandra West, Mumbai.">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/static/style.css">
+  
+  <!-- Schema.org JSON-LD Structured Data for LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Subko Coffee Roasters & Craft Bakehouse",
+    "image": "https://www.subko.coffee/logo.png",
+    "telephone": "+919136022008",
+    "email": "orders@subko.coffee",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ground Floor, Mary Lodge, 21A, Chapel Rd, Ranwar",
+      "addressLocality": "Bandra West, Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400050",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 19.0558,
+      "longitude": 72.8295
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "07:30",
+        "closes": "22:00"
+      }
+    ],
+    "priceRange": "₹₹",
+    "servesCuisine": ["Specialty Coffee", "Artisan Bakery", "Craft Chocolate"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Announcement Bar -->
+  <aside class="top-notice-bar" aria-label="Operating announcement">
+    <span>Ranwar Village Flagship open daily from <strong>07:30 AM to 10:00 PM</strong>. Fresh sourdough bake pulls at 08:00 AM &amp; 03:30 PM.</span>
+    <a href="#reserve">Reserve Seating &rarr;</a>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="/" class="brand-logo" aria-label="Subko Coffee Roasters Homepage">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <div class="brand-text">
+          <span class="brand-title">Subko</span>
+          <span class="brand-sub">Coffee &amp; Craft Bakehouse</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#story">Our Origin</a></li>
+          <li><a href="#menu">Craft Menu</a></li>
+          <li><a href="#reserve">Reservations</a></li>
+          <li><a href="#reviews">Guest Words</a></li>
+          <li><a href="#visit">Location &amp; Hours</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-cart-indicator" onclick="toggleCartDrawer()" aria-label="Open your craft order tray">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="badge" id="cartCountBadge">0</span>
+        </button>
+
+        <div id="navAuthContainer">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-editorial" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-tag">Mary Lodge, Ranwar Village &bull; Bandra West</div>
+            <h1 id="hero-heading" class="hero-title">
+              From the Indian Subcontinent, <em>Crafted for the World.</em>
+            </h1>
+            <p class="hero-description">
+              Tucked inside a restored 1920s heritage bungalow in Bandra, we roast single-origin specialty coffees from southern estates and bake slow-fermented sourdough pastries daily from scratch.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#menu" class="btn btn-primary">
+                <span>Explore Daily Bake &amp; Brew</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#reserve" class="btn btn-secondary">Reserve Table or Cupping Session</a>
+            </div>
+
+            <div class="hero-verified-pills">
+              <div class="verified-item">
+                <span class="verified-val">72h</span>
+                <span class="verified-lbl">Slow Lamination</span>
+              </div>
+              <div class="verified-item">
+                <span class="verified-val">100%</span>
+                <span class="verified-lbl">Indian Terroirs</span>
+              </div>
+              <div class="verified-item">
+                <span class="verified-val">4.6 &starf;</span>
+                <span class="verified-lbl">4,820+ Google Reviews</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Board -->
+          <div class="hero-visual-card">
+            <div class="status-pill">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Ranwar Bakehouse Active Now</span>
+            </div>
+            <h2 class="dispatch-board-title">Today's Fresh Extraction &amp; Oven Pulls</h2>
+            <p style="font-size:0.88rem; color:var(--color-charcoal-500); margin-bottom:1rem;">
+              Fresh batches coming out of our Mary Lodge deck ovens every morning:
+            </p>
+            <ul class="dispatch-list">
+              <li>
+                <span><strong>Riverdale Washed Arabica</strong> &bull; Filter Brew</span>
+                <span class="badge-batch">On Bar</span>
+              </li>
+              <li>
+                <span><strong>Cultured Butter Croissants</strong> &bull; Honeycomb Crumb</span>
+                <span class="badge-batch">Fresh Batch</span>
+              </li>
+              <li>
+                <span><strong>Podi Sourdough Toast</strong> &bull; A2 Cultured Ghee</span>
+                <span class="badge-batch">Signature</span>
+              </li>
+              <li>
+                <span><strong>Anamalai Hills Single-Origin Cacao</strong> &bull; 70%</span>
+                <span class="badge-batch">Craft Lot</span>
+              </li>
+            </ul>
+
+            <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px dashed var(--color-cream-300); display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.85rem; color:var(--color-charcoal-700);">Concierge Enquiries:</span>
+              <a href="tel:+919136022008" style="font-weight:700; color:var(--color-espresso-900); font-size:0.9rem;">+91 91360 22008</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Origin & Heritage Section -->
+    <section id="story" class="section-pad" style="background:#fff; border-bottom:1px solid var(--color-cream-300);">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Ranwar Village Heritage</div>
+          <h2 class="section-title">An Authentic Sanctuary for Coffee and Craft Baking</h2>
+          <p class="section-intro">
+            Subko began with a clear purpose: to prove that Indian coffee estates, native grains, and single-origin cacao deserve global recognition without compromise or pretense.
+          </p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:2rem;">
+          <div style="background:var(--color-cream-100); border:1px solid var(--color-cream-300); padding:2rem; border-radius:var(--radius-md);">
+            <div style="font-family:var(--font-serif); font-size:1.8rem; color:var(--color-terracotta); margin-bottom:0.75rem; font-weight:700;">01</div>
+            <h3 style="font-family:var(--font-serif); font-size:1.3rem; margin-bottom:0.75rem; color:var(--color-espresso-900);">Estate Terroir Traceability</h3>
+            <p style="font-size:0.92rem; color:var(--color-charcoal-700); line-height:1.65;">
+              Every coffee lot is sourced directly from smallholder growers in Shevaroy Hills, Biligirirangana Hills, and Chikmagalur with full lot provenance and transparent farm pricing.
+            </p>
+          </div>
+
+          <div style="background:var(--color-cream-100); border:1px solid var(--color-cream-300); padding:2rem; border-radius:var(--radius-md);">
+            <div style="font-family:var(--font-serif); font-size:1.8rem; color:var(--color-terracotta); margin-bottom:0.75rem; font-weight:700;">02</div>
+            <h3 style="font-family:var(--font-serif); font-size:1.3rem; margin-bottom:0.75rem; color:var(--color-espresso-900);">72-Hour Wild Fermentation</h3>
+            <p style="font-size:0.92rem; color:var(--color-charcoal-700); line-height:1.65;">
+              Our craft bakehouse relies exclusively on natural wild yeast levain, slow cold fermentation, and 100% French cultured butter for our laminated pastries and rustic country batards.
+            </p>
+          </div>
+
+          <div style="background:var(--color-cream-100); border:1px solid var(--color-cream-300); padding:2rem; border-radius:var(--radius-md);">
+            <div style="font-family:var(--font-serif); font-size:1.8rem; color:var(--color-terracotta); margin-bottom:0.75rem; font-weight:700;">03</div>
+            <h3 style="font-family:var(--font-serif); font-size:1.3rem; margin-bottom:0.75rem; color:var(--color-espresso-900);">Mary Lodge Community</h3>
+            <p style="font-size:0.92rem; color:var(--color-charcoal-700); line-height:1.65;">
+              Located in the Portuguese-Goan precinct of Ranwar, our flagship cafe provides a quiet retreat from the metropolis for writers, coffee connoisseurs, and neighborhood locals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Craft Menu Section -->
+    <section id="menu" class="section-pad">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Direct from our Bakehouse &amp; Roastery</div>
+          <h2 class="section-title">Verified Daily Offerings &amp; Pricing</h2>
+          <p class="section-intro">
+            Explore our curated selection. Every item ordered online captures an immutable price snapshot at checkout and is prepared fresh to order at our Bandra flagship counter.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="tab-pills" role="tablist" aria-label="Menu category filters">
+          <button class="tab-btn active" data-category="all" role="tab" aria-selected="true">All Offerings</button>
+          <button class="tab-btn" data-category="Specialty Coffee" role="tab" aria-selected="false">Specialty Coffee</button>
+          <button class="tab-btn" data-category="Craft Bakehouse" role="tab" aria-selected="false">Craft Bakehouse</button>
+          <button class="tab-btn" data-category="Desserts &amp; Craft Cacao" role="tab" aria-selected="false">Desserts &amp; Single-Origin Cacao</button>
+        </div>
+
+        <!-- Dynamic Menu Cards Grid -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Populated by JavaScript from /api/menu -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation & Cupping Booking Section -->
+    <section id="reserve" class="section-pad reservation-section">
+      <div class="container">
+        <div class="booking-split">
+          <div class="booking-info">
+            <div class="section-kicker">Advance Seating &amp; Tasting</div>
+            <h3>Reserve a Table or Cupping Session</h3>
+            <p>
+              Mary Lodge has limited indoor and verandah seating to maintain an intimate, unhurried atmosphere. We accept advance bookings for coffee tasting flights, private cupping room sessions, and cafe tables.
+            </p>
+
+            <div class="experience-card">
+              <h4>Flagship Cafe Table</h4>
+              <p>Reserved indoor or verandah table with dedicated table-side brew service. Ideal for meetings, solo reading, or breakfast dates.</p>
+            </div>
+
+            <div class="experience-card">
+              <h4>Cupping Room Tasting Experience</h4>
+              <p>A guided 45-minute sensory cupping led by our head roaster, tasting 3 distinct estate micro-lots with paired bakehouse bites.</p>
+            </div>
+
+            <div style="background:#fff; border:1px solid var(--color-cream-300); border-radius:var(--radius-md); padding:1.25rem;">
+              <h4 style="font-family:var(--font-serif); color:var(--color-espresso-900); margin-bottom:0.35rem;">WhatsApp Concierge</h4>
+              <p style="font-size:0.88rem; color:var(--color-charcoal-700); margin-bottom:0.75rem;">Prefer instant messaging for large group reservations or custom cake orders?</p>
+              <a href="https://wa.me/919136022008?text=Hello%20Subko%20Team%2C%20I%20would%20like%20to%20reserve%20a%20table%20at%20Mary%20Lodge" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.85rem; padding:0.4rem 0.9rem;">
+                <span>Chat with Subko on WhatsApp</span> &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Booking Form -->
+          <div class="booking-form-box">
+            <h3 class="form-title">Reserve Your Seating</h3>
+            <p class="form-sub">Instant confirmation recorded directly in our reservation ledger.</p>
+
+            <form id="tableBookingForm">
+              <div class="form-grid">
+                <div class="form-group full">
+                  <label for="bookName">Full Name *</label>
+                  <input type="text" id="bookName" class="form-control" placeholder="e.g. Manav Mishra" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookEmail">Email Address *</label>
+                  <input type="email" id="bookEmail" class="form-control" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookPhone">Mobile Number *</label>
+                  <input type="tel" id="bookPhone" class="form-control" placeholder="+91 98765 43210" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookDate">Reservation Date *</label>
+                  <input type="date" id="bookDate" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookTime">Preferred Time *</label>
+                  <select id="bookTime" class="form-control" required>
+                    <option value="08:00 AM">08:00 AM</option>
+                    <option value="09:30 AM">09:30 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="03:30 PM">03:30 PM</option>
+                    <option value="05:00 PM">05:00 PM</option>
+                    <option value="07:00 PM">07:00 PM</option>
+                    <option value="08:30 PM">08:30 PM</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookGuests">Number of Guests *</label>
+                  <select id="bookGuests" class="form-control" required>
+                    <option value="1">1 Person</option>
+                    <option value="2" selected>2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6+ People (Group)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookServiceType">Experience Type *</label>
+                  <select id="bookServiceType" class="form-control" required>
+                    <option value="Table Reservation">Standard Table Reservation</option>
+                    <option value="Cupping Room Experience">Cupping Room Tasting Session</option>
+                    <option value="Private Brew Session">Private Brew Bar Experience</option>
+                  </select>
+                </div>
+
+                <div class="form-group full">
+                  <label for="bookNotes">Dietary Notes or Special Occasion</label>
+                  <textarea id="bookNotes" class="form-control" placeholder="Let us know if celebrating a birthday, dietary preferences, or indoor vs verandah preference..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.75rem;">
+                Confirm Reservation Now &rarr;
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Customer Reviews -->
+    <section id="reviews" class="section-pad" style="background:#fff; border-bottom:1px solid var(--color-cream-300);">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Verified Customer Opinions</div>
+          <h2 class="section-title">Words from Our Flagship Patrons</h2>
+          <p class="section-intro">
+            Preserving genuine customer reviews verified from public Google Maps profiles.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">&starf;&starf;&starf;&starf;&starf;</div>
+            <p class="review-quote">
+              "Subko tucked inside the quiet Ranwar village of Bandra is unmatched. The sourdough croissant was flaky and laminated to perfection, and the Riverdale estate pour-over had crisp citrus notes. Service is fast despite the weekend rush."
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Rohan Kulkarni</div>
+              <div class="reviewer-meta">Local Guide &bull; Mumbai &bull; Verified Google Review</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">&starf;&starf;&starf;&starf;&starf;</div>
+            <p class="review-quote">
+              "The podi sourdough toast and cortado combo has become my weekend ritual. True dedication to Indian single-origin beans and craft baking. Mary Lodge ambiance is unmatched."
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Ananya Sen</div>
+              <div class="reviewer-meta">Regular Patron &bull; Bandra West &bull; Verified Google Review</div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">&starf;&starf;&starf;&starf;&starf;</div>
+            <p class="review-quote">
+              "Atmosphere inside Mary Lodge feels like stepping into a vintage heritage sanctuary. Tables fill up quickly, so the advance reservation system is a lifesaver."
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-name">Dr. Vikram Malhotra</div>
+              <div class="reviewer-meta">Coffee Connoisseur &bull; Verified Google Review</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Practical Verification Details -->
+    <section id="visit" class="section-pad">
+      <div class="container">
+        <div class="location-panel">
+          <div>
+            <h3>Visit the Flagship Sanctuary</h3>
+            <p>
+              Located in the historic Ranwar heritage precinct of Bandra West. Please note that Chapel Road is a pedestrian-friendly residential bylane; nearby parking is available at Hill Road or St. Stanislaus.
+            </p>
+
+            <div class="info-row">
+              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div class="info-content">
+                <strong>Physical Address</strong>
+                <span>Ground Floor, Mary Lodge, 21A, Chapel Rd, Ranwar, Bandra West, Mumbai, Maharashtra 400050</span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <div class="info-content">
+                <strong>Operating Schedule</strong>
+                <span>Open Seven Days a Week: 07:30 AM to 10:00 PM</span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <div class="info-content">
+                <strong>Direct Contact</strong>
+                <a href="tel:+919136022008">+91 91360 22008</a> &bull; <a href="mailto:orders@subko.coffee">orders@subko.coffee</a>
+              </div>
+            </div>
+
+            <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+              <a href="https://maps.google.com/?q=Subko+Coffee+Roasters+Ranwar+Bandra+West+Mumbai" target="_blank" rel="noopener" class="btn btn-primary" style="background:#fff; color:var(--color-espresso-900); border-color:#fff;">
+                <span>Open in Google Maps</span> &rarr;
+              </a>
+              <a href="https://wa.me/919136022008?text=Hello%20Subko%20Team%2C%20I%20have%20an%20enquiry%20regarding%20orders" target="_blank" rel="noopener" class="btn btn-secondary" style="color:#fff; border-color:rgba(255,255,255,0.3);">
+                <span>WhatsApp Concierge</span>
+              </a>
+            </div>
+          </div>
+
+          <div style="background:var(--color-espresso-800); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-sm); padding:2rem; display:flex; flex-direction:column; justify-content:center;">
+            <h4 style="font-family:var(--font-serif); font-size:1.4rem; color:var(--color-brass); margin-bottom:1rem;">Bandra Village Neighborhood Guide</h4>
+            <p style="font-size:0.92rem; color:var(--color-cream-300); line-height:1.7; margin-bottom:1.5rem;">
+              Ranwar is one of the 24 original pakhadis (hamlets) of Bandra, established over three centuries ago. When visiting Subko, take a quiet walk through Chapel Road to experience the 19th-century wooden cross, heritage verandas, and vintage painted facades.
+            </p>
+            <div style="border-top:1px dashed rgba(255,255,255,0.15); padding-top:1rem;">
+              <span style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--color-brass);">Atmosphere Code</span>
+              <p style="font-size:0.85rem; color:#fff; margin-top:0.25rem;">Respectful of local village residents &bull; Pet-friendly courtyard &bull; Free guest Wi-Fi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Slide-Over Drawer -->
+  <div class="drawer-backdrop" id="cartBackdrop" onclick="toggleCartDrawer()"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Order Cart Drawer">
+    <div class="drawer-header">
+      <h3>Your Craft Order Tray</h3>
+      <button class="drawer-close" onclick="toggleCartDrawer()" aria-label="Close cart">&times;</button>
+    </div>
+
+    <div class="drawer-body" id="cartItemsList">
+      <!-- Populated by JavaScript -->
+    </div>
+
+    <div class="drawer-footer">
+      <div style="margin-bottom:1rem;">
+        <label for="deliveryTypeSelect" style="display:block; font-size:0.85rem; font-weight:600; color:var(--color-espresso-900); margin-bottom:0.35rem;">Fulfilment Mode</label>
+        <select id="deliveryTypeSelect" class="form-control">
+          <option value="Dine-in Pick-up">Dine-in Bar Pick-up</option>
+          <option value="Takeaway Counter">Takeaway Counter</option>
+          <option value="Local Delivery">Ranwar / Bandra Local Delivery</option>
+        </select>
+      </div>
+
+      <div class="bill-row">
+        <span>Bakehouse Subtotal</span>
+        <span id="cartSubtotal">₹0.00</span>
+      </div>
+      <div class="bill-row">
+        <span>GST (5% Hospitality Standard)</span>
+        <span id="cartTax">₹0.00</span>
+      </div>
+      <div class="bill-row total">
+        <span>Final Total</span>
+        <span id="cartTotal">₹0.00</span>
+      </div>
+
+      <button id="checkoutBtn" class="btn btn-primary" onclick="handleCheckout()" style="width:100%;" disabled>
+        <span>Confirm Order &amp; Capture Price Snapshot</span> &rarr;
+      </button>
+      <p style="font-size:0.75rem; text-align:center; color:var(--color-charcoal-500); margin-top:0.6rem;">
+        Prices are permanently recorded on order creation.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Authentication Dialog Modal -->
+  <div class="modal-backdrop" id="authModal" onclick="if(event.target===this)closeAuthModal()">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeAuthModal()" aria-label="Close dialog">&times;</button>
+      
+      <div class="auth-tabs">
+        <button class="auth-tab-btn active" id="tabLoginBtn" onclick="switchAuthTab('login')">Sign In</button>
+        <button class="auth-tab-btn" id="tabRegisterBtn" onclick="switchAuthTab('register')">Create Account</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" class="form-control" required placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" class="form-control" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.5rem;">Sign In</button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="registerForm" onsubmit="handleRegister(event)" style="display:none;">
+        <div class="form-group">
+          <label for="regName">Full Name</label>
+          <input type="text" id="regName" class="form-control" required placeholder="e.g. Manav Mishra">
+        </div>
+        <div class="form-group">
+          <label for="regEmail">Email Address</label>
+          <input type="email" id="regEmail" class="form-control" required placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="regPhone">Mobile Phone</label>
+          <input type="tel" id="regPhone" class="form-control" required placeholder="+91 98765 43210">
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Create Password</label>
+          <input type="password" id="regPassword" class="form-control" required placeholder="Minimum 6 characters">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.5rem;">Join Subko Patrons</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom:1rem;">
+            <span class="brand-mark" style="background:#fff; color:var(--color-espresso-900);">S</span>
+            <div class="brand-text">
+              <span class="brand-title" style="color:#fff;">Subko</span>
+              <span class="brand-sub" style="color:var(--color-cream-300);">Coffee &amp; Craft Bakehouse</span>
+            </div>
+          </div>
+          <p style="font-size:0.9rem; color:var(--color-cream-400); line-height:1.65; max-width:320px;">
+            A specialty coffee roastery, craft bakehouse, and single-origin chocolate sanctuary celebrating the terroirs of the Indian subcontinent.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#story">Origin &amp; Terroirs</a></li>
+            <li><a href="#menu">Daily Craft Menu</a></li>
+            <li><a href="#reserve">Table &amp; Cupping Booking</a></li>
+            <li><a href="#visit">Location &amp; Hours</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Offerings</h4>
+          <ul class="footer-links">
+            <li><a href="#menu">Single-Origin Arabica</a></li>
+            <li><a href="#menu">72-Hour Laminated Croissants</a></li>
+            <li><a href="#menu">Anamalai Craft Cacao</a></li>
+            <li><a href="#menu">Country Sourdough Batards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Flagship Contact</h4>
+          <ul class="footer-links">
+            <li><span>Ground Floor, Mary Lodge, Chapel Rd, Ranwar, Bandra West, Mumbai 400050</span></li>
+            <li><a href="tel:+919136022008">+91 91360 22008</a></li>
+            <li><a href="mailto:orders@subko.coffee">orders@subko.coffee</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Subko Coffee Roasters &amp; Craft Bakehouse. All rights reserved.</div>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="/dashboard">Customer Portal</a>
+          <a href="/staff">Staff Concierge</a>
+          <a href="https://www.subko.coffee" target="_blank" rel="noopener">Official Brand</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

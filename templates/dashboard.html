@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subko Patron Portal — My Reservations & Orders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body style="background-color: var(--color-cream-100);">
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="/" class="brand-logo">
+        <span class="brand-mark">S</span>
+        <div class="brand-text">
+          <span class="brand-title">Subko</span>
+          <span class="brand-sub">Patron Dashboard</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <a href="/" class="btn btn-secondary" style="font-size:0.85rem; padding:0.4rem 0.8rem;">&larr; Back to Cafe</a>
+        <button onclick="handleLogout()" class="btn btn-secondary" style="font-size:0.85rem; padding:0.4rem 0.8rem;">Sign Out</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
+    <div style="background: #fff; border: 1px solid var(--color-cream-300); border-radius: var(--radius-md); padding: 2rem; margin-bottom: 2.5rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem;">
+      <div>
+        <div class="section-kicker" style="margin-bottom:0.25rem;">Subko Patron Account</div>
+        <h1 style="font-family:var(--font-serif); font-size:2.2rem; color:var(--color-espresso-900); margin-bottom:0.25rem;">
+          Welcome, {{ user.full_name }}
+        </h1>
+        <p style="font-size:0.92rem; color:var(--color-charcoal-500);">
+          Email: <strong>{{ user.email }}</strong> &bull; Mobile: <strong>{{ user.phone }}</strong>
+        </p>
+      </div>
+
+      <div style="display:flex; gap:1rem;">
+        <a href="/#menu" class="btn btn-primary">+ New Bakehouse Order</a>
+        <a href="/#reserve" class="btn btn-secondary">Reserve a Table</a>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;">
+      <!-- Active Reservations -->
+      <section>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.25rem;">
+          <h2 style="font-family:var(--font-serif); font-size:1.6rem; color:var(--color-espresso-900);">My Table &amp; Cupping Reservations</h2>
+          <span class="badge-batch">Mary Lodge, Ranwar</span>
+        </div>
+        <div id="userBookingsList">
+          <p style="color:var(--color-charcoal-500);">Loading your reservations...</p>
+        </div>
+      </section>
+
+      <!-- Order Receipts & Immutable Snapshots -->
+      <section>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.25rem;">
+          <h2 style="font-family:var(--font-serif); font-size:1.6rem; color:var(--color-espresso-900);">Order History &amp; Immutable Receipts</h2>
+          <span class="badge-batch">Price Snapshots</span>
+        </div>
+        <div id="userOrdersList">
+          <p style="color:var(--color-charcoal-500);">Loading order receipts...</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
